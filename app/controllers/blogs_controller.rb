@@ -38,6 +38,7 @@ class BlogsController < ApplicationController
   # GET /blogs/1/edit
   def edit
     @blog = Blog.find(params[:id])
+    @articles = Article.all
   end
 
   # POST /blogs

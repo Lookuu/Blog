@@ -8,7 +8,7 @@ development:
   pool: 5
   timeout: 5000
   username: root
-  password: 1q2w3e4r
+  password:
   host: localhost
 
 # # SQLite version 3.x

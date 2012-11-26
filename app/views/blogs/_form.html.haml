@@ -18,12 +18,13 @@
   .field
     = f.label :url
     = f.text_field :url
-  / .field
-  /   = f.label :active
-  /   = f.text_field :active
-  / .field
-  /   = f.label :user_id
-  /   = request.session_options[:id]
+  .field
+    = hidden_field_tag "blog[article_ids][]", nil
+    - if @articles
+      .articles
+        - @articles.each do |article|
+          = check_box_tag "blog[article_ids][]", article.id, @blog.article_ids.include?(article.id), id: dom_id(article)
+          = label_tag dom_id(article), article.name
   .actions
     = f.submit 'Save'
 
