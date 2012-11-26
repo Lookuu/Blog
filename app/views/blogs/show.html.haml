@@ -1,0 +1,24 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @blog.name
+%p
+  %b Login:
+  = @blog.login
+%p
+  %b Password:
+  = @blog.password
+%p
+  %b Url:
+  = @blog.url
+%p
+  %b Active:
+  = @blog.active
+%p
+  %b User:
+  = @blog.user_id
+
+= link_to 'Edit', edit_blog_path(@blog)
+\|
+= link_to 'Back', blogs_path
