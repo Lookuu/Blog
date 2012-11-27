@@ -6,8 +6,8 @@
     %th Login
     %th Password
     %th Url
-    %th Active
-    %th User
+    / %th Active
+    / %th User
     %th
     %th
     %th
@@ -18,8 +18,8 @@
       %td= blog.login
       %td= blog.password
       %td= blog.url
-      %td= blog.active
-      %td= blog.user_id
+      / %td= blog.active
+      / %td= blog.user_id
       %td{:class => "btn"}= link_to 'Show', blog_path(blog)
       %td{:class => "btn"}= link_to 'Edit', edit_blog_path(blog)
       %td{:class => "btn"}= link_to 'Destroy', blog, :confirm => 'Are you sure?', :method => :delete

@@ -27,6 +27,7 @@ gem 'haml'
 gem 'devise'
 gem 'cancan'
 gem 'seo-mixer', :git => 'git://github.com/Katos/seo-mixer.git'
+gem 'wordpress', :git => 'git://github.com/jordandobson/wordpress.git'
 
 group :test, :development do
   gem 'guard-livereload'
