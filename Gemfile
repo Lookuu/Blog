@@ -1,6 +1,6 @@
-source 'https://rubygems.org'
-
-gem 'rails', '3.2.8'
+source "https://rubygems.org"
+ruby '1.9.3'
+#gem 'rails', '3.2.8'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -18,9 +18,11 @@ group :assets do
 
   gem 'uglifier', '>= 1.0.3'
   gem 'haml-rails'
-  gem 'less-rails'#, "~> 2.0.1"
-  gem 'twitter-bootstrap-rails'#, "~> 1.3.0"
+  gem 'less-rails'
+  gem 'twitter-bootstrap-rails'
+  #gem 'actionpack', '~> 3.1.0'
 end
+
 
 gem 'jquery-rails'
 gem 'haml'
