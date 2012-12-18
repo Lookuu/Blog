@@ -1,11 +1,15 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 ruby '1.9.3'
-#gem 'rails', '3.2.8'
+gem 'rails', '3.2.8'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'mysql2'
+
+  gem 'therubyracer'#, :platforms => :ruby
+  gem 'less-rails'
+  gem 'twitter-bootstrap-rails'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -14,22 +18,17 @@ group :assets do
   gem 'coffee-rails', '~> 3.2.1'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  gem 'therubyracer', :platforms => :ruby
-
   gem 'uglifier', '>= 1.0.3'
   gem 'haml-rails'
-  gem 'less-rails'
-  gem 'twitter-bootstrap-rails'
-  #gem 'actionpack', '~> 3.1.0'
-end
 
+end
 
 gem 'jquery-rails'
 gem 'haml'
 gem 'devise'
 gem 'cancan'
 gem 'seo-mixer', :git => 'git://github.com/Katos/seo-mixer.git'
-gem 'wordpress', :git => 'git://github.com/jordandobson/wordpress.git'
+gem 'wordpress', "~> 0.1.7"
 
 group :test, :development do
   gem 'guard-livereload'

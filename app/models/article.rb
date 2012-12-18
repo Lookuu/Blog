@@ -5,12 +5,13 @@ class Article < ActiveRecord::Base
   has_many :articles_blogs
   has_many :blogs, :through => :articles_blogs
 
-  def mixed_content
-    self.content
-  end
+  # def mixed_content
+  #   self.content
+  # end
 
-  def mixed_content=(content)
-    # self.content = Mixer.mix(content)
-    self.content = content.reverse
-  end
+#   def mixed_content=(content)
+#     # self.content = Mix::Mixer.new(content)
+#     # mixer.mix
+#     # mixer.output
+#   end
 end

@@ -1,4 +1,4 @@
-%h1 User blogs
+%h1 Blogs
 
 %table
   %tr
@@ -20,10 +20,11 @@
       %td= blog.url
       / %td= blog.active
       / %td= blog.user_id
-      %td{:class => "btn"}= link_to 'Show', blog_path(blog)
+      %td{:class => "btn"}= link_to 'Show', blog
       %td{:class => "btn"}= link_to 'Edit', edit_blog_path(blog)
       %td{:class => "btn"}= link_to 'Destroy', blog, :confirm => 'Are you sure?', :method => :delete
 
 %br
 
   %li{:class => "btn"}= link_to 'New Blog', new_blog_path
+  %li{:class => "btn"}= link_to 'New Article', new_article_path
